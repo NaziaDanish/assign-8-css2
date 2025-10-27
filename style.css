@@ -1,0 +1,93 @@
+body {
+    font-family: 'Georgia', serif;
+    margin: 0;
+    padding: 0;
+    background: url('assets/back-ground-img.jpg') no-repeat center center fixed;
+    background-size: cover;
+    color: #fff;
+    text-align: center;
+}
+
+h1 {
+    margin-top: 20px;
+    font-family: Algerian;
+    font-size: 2.5em;
+    text-shadow: 2px 2px 5px #00ff88;
+    background: linear-gradient(to right, #111, #333);
+    color: white;
+    padding: 15px;
+    border-radius: 15px;
+    width: 80%;
+    margin: 20px auto;
+    box-shadow: 0 0 20px lime;
+    transition: all 1s ease;
+    /*sabhi properties ke liye transition apply hogi (color, background, size, transform, etc.)
+     and ease = transition ka style — start me thoda slow, beech me fast, end me phir slow*/
+}
+
+h1:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 35px #00ff88;
+}
+
+.quote-box {
+    width: 85%;
+    max-width: 600px;
+    background: rgba(0, 0, 0, 0.7);
+    margin: 25px auto;
+    padding: 20px;
+    border-radius: 15px;
+    transition: all 0.5s ease;
+}
+
+.quote-box:hover {
+    transform: scale(1.03);
+    box-shadow: 0 0 30px rgba(255, 255, 255, 0.3);
+}
+
+img {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    border: 3px solid #fff;
+    box-shadow: 0 0 15px #00ff88;
+    margin-bottom: 10px;
+    transition: transform 1s;
+}
+
+img:hover {
+    transform: rotate(360deg);
+} /*transform: translate(50px left,right,/ up,down,100px);*/
+  /*transform: translateX(50px); /* sirf X-axis */
+  /*transform: translateY(-20px); /* sirf Y-axis*/
+  /*transform: rotate(45deg); Element ko angle ke hisaab se rotate karta hai.*/
+  /*Element 45 degree clockwise ghoom jayega.
+   Negative value = anticlockwise rotation*/
+blockquote {
+    font-size: 1.2em;
+    font-style: italic;
+    margin: 10px;
+}
+
+a {
+    color: #00ffcc;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+a:hover {
+    color: #ff4d4d;
+}
+ a:link{
+    color: #ffd700;
+ }
+ a:visited{
+    color: #305c47;
+ }
+cite {
+    display: block;
+    margin-top: 10px;
+    font-style: normal;
+    color: #ffd700;
+    font-weight: bold;
+}
